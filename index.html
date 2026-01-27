@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+</head>
+<body>
+    <div id="img_card">
+        <img src="/web_dev/images/pixel-statue_signupform.avif" alt="Pixelated Statue Sign Up Image">
+        <div id="img_text">
+            <img id="logo" src="/web_dev/images/vecteezy_golden-laurel-wreath-transparent.png" height="20px" width="20px">
+            <h1>The COMPANY</h1>
+        </div>
+    </div>
+    
+    <div id="form_card">
+        <div id="form_info_text">
+            <h1>Join Us Today!</h1>
+            <p>We are a Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+            <p>Please fill in the form to create an account.</p>
+        </div>
+        <form id="signUpForm"></form>
+            <div id="form_container">
+                <div id="form_left">
+                    <label for="first-name">First Name:</label><br>
+                    <input type="text" id="first-name" name="first-name" required><br>
+                    
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" required><br>
+                </div>
+                <div id="form_right">
+                    <label for="last-name">Last Name:</label><br>
+                    <input type="text" id="last-name" name="last-name" required><br>
+                    <label for="phone-number">Phone Number:</label><br>
+                    <input type="tel" id="phone-number" name="phone-number"><br>
+                    <label for="confirm-password">Confirm Password:</label><br>
+                    <input type="password" id="confirm-password" name="confirm-password" required><br>
+                </div>
+            </div>
+        </form>
+        <div id="submit_button_container">
+            <button type="submit" form="signUpForm" id="submit_button">Create Account</button>
+        </div>
+    </div>
+</body>
+<footer>
+    <p>Logo credit: <a href="https://www.vecteezy.com/free-png/logo">Logo PNGs by Vecteezy</a></p>
+</footer>
+</html>
