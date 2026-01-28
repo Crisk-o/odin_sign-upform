@@ -51,6 +51,18 @@ img {
     background-color: rgba(0, 0, 0, 0.562);
 
 }
+
+#photo_credit {
+    position: absolute;
+    cursor: pointer;
+    bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+    width: 30vw;
+    background-color: rgba(0, 0, 0, 0.562);
+    z-index: 2;
+}
 #logo{
     width: 100px;
     height: 100px;
@@ -62,28 +74,28 @@ img {
     background-color: #7e5752;
     width: 70vw;
     height: 100vh;
-    padding: 50px;
+    box-sizing: border-box;
 }
 
 #form_info_text{
-    color: #cc8342;
+    color: #d0b165;
     text-align: center;
     max-width: 75%;
     padding: 10px;
     margin: auto 0;
 }
 #form_info_text h1{
-    color: #49252f;
+    color: #cc8342;
 }
 #form_container{
     display: flex;
-    border: 2px solid black;
     font-size: 20px;
-    max-width: 75%;
+    max-width: 100%;
     height: 300px;
-    padding: 10px;
     margin: auto 0;
+    padding-left: 20px;
     gap: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 #form_left, #form_right {
@@ -99,9 +111,23 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
     padding: 5px;
     width: 300px;
     font-size: 18px;
-    border: 2px solid black;
     border-radius: 5px;
     box-sizing: border-box;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid black;
+}
+
+input:user-invalid {
+    border: 2px solid red;
+}
+input:user-valid     {
+    border: 2px solid forestgreen;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #f4d35e;
+    box-shadow: 0 0 5px #f4d35e;
 }
 
 #submit_button {
@@ -112,22 +138,22 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
     font-size: 20px;
     cursor: pointer;
     margin-top: 20px;
-    width: 200px;
-    height: 100px;
+    width: 300px;
+    height: 50px;
 }
 #submit_button:hover {
     background-color: #e3c14e;
 }
 
 #submit_button_container {
-    padding: 10px;
-  
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 footer {
     font-size: 12px;
     text-align: center;
-    color: #49252f;
+    color: #ffffff;
     position: absolute;
     bottom: 10px;
     width: 100%;
